@@ -10,7 +10,7 @@ gulp.task('test_task', () => {
 gulp.task('default', ['test_task', 'lint'])
 
 gulp.task('lint', () => {
-  gulp.src(['./lib/bitmap.js', './lib/trasnformer.js' './test/test.js', './gulpfile.js'])
+  gulp.src(['./lib/bitmap.js', './test/test.js', './gulpfile.js'])
     .pipe(eslint({
       "settings": {
     "ecmascript": 5
